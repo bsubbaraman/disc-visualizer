@@ -242,7 +242,7 @@ class Fab {
     rotateY(PI);
     scale(-4,4);
     push();
-      translate(this.maxX, 0, this.maxY/2);
+      translate(-this.maxX, 0, this.maxY/2);
       // rotateY(PI/12);
       rotateX(PI/2);
       fill(254, 249, 152);
