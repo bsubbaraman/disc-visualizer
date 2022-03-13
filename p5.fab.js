@@ -240,7 +240,7 @@ class Fab {
     // draw print bed
     translate(-this.maxX/2, 0, -this.maxY/2);
     rotateY(PI);
-    scale(-2,2);
+    scale(-4,4);
     push();
       translate(this.maxX/2, 0, this.maxY/2);
       // rotateY(PI/12);
