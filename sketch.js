@@ -1,6 +1,7 @@
 let fab;
 let input;
 let fileData;
+let clear = true;
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
@@ -15,8 +16,7 @@ function setup() {
 }
 
 function draw() {
-  // background(255);
-  // if (fileData) fab.render();
+  
 }
 
 function handleFile(file) {
@@ -27,6 +27,10 @@ function handleFile(file) {
       if (d[i] > 0) 
         fileData.push(d[i]);
     }
+    // clear all the old data
+    fab.commands = [];
+    path = [];
+    background(255);
     fabDraw();
     fab.parseGcode();
     fab.render();
